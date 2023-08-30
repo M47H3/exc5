@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Lista de tarefas</h1>
+
+    <button class="bnt" onclick="tarefas()">Adicionar tarefa</button>
+
+    <button class="bnt" onclick="doma()">Ver tarefas do dia</button>
+
+    <script>
+        let ma = [];
+        function tarefas(){
+            let ta = prompt('Adicionar tarefa');
+            alert('Você adicionou '+ ta +' a sua lista de tarefas.');
+            ma.push(ta + '\n')
+        }
+        function doma(){
+           
+            alert('Sua lista é esta: '+ ma +'Estas são todas tarefas.');
+            
+        }
+
+
+    </script>
+
+</body>
+</html>
